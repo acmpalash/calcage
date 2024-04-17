@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #dd00cc, #351e33 );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 600px;
+    margin: 100px auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0,0,5,0.3);
+}
+@media (max-width: 768px){
+    .container{
+     margin: 35px auto;   
+     width: 450px;
+     font-size: medium;
+ 
+    }
+ }
+ 
+h1{
+    text-align: center;
+    color: #333;
+    padding-bottom: 15px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 800;
+}
+input[type="date"]{
+    width: 50%;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #ccc;    
+}
+.button{    
+  display: inline-block;
+  border-radius: 40px;
+  background-color: #b01ef4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px; 
+  box-shadow: 1px 5px 3px 5px #351e33;    
+     
+}
+.button:hover{
+    box-shadow: 0px 2px 0px 1px #351e33; 
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;    
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;        
+  }
+  
+  .button:hover span {
+    padding-right: 25px;    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: -10px;
+    font-size: 55px;
+    rotate: 90deg;
+    box-shadow: none;
+   
+  }
+.result-container{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,5,0.3);
+   
+}
+.result{
+    margin-top: 13px;    
+}
+.result h3{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   color: #333;
+}
+.result p{
+    margin-top: 20px;
+}
+.arrow{  
+   
+    background-image: linear-gradient(to right, red , rgb(36, 236, 86), #645af0); 
+    margin-top: 15px;   
+    font-size: 60px;
+    
+}
